@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<style>
+    /** { border: 1px solid green; }*/
+    #logo {
+        margin: 200px auto 50px auto;
+    }
+    p {
+        margin: 5px;
+    }
+    a {
+        margin: 5px
+    }
+    button {
+        padding: 10px;
+        margin: 5px;
+    }
+    nav {
+        height: 20px;
+    }
+    footer {
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: lightgray;
+    }
+    .vflex {
+        display: flex;
+        flex-direction: column;
+    }
+    .hflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .searchbox {
+        display: block;
+        width: 400px;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .footer__links {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    .footer__LHS {
+        display: inline-block;
+    }
+    .footer__RHS {
+        display: inline-block;
+    }
+</style>
+
+<html lang="en-US">
+<head>
+    <title>Iljaz Google</title>
+</head>
+<body>
+    <header>
+        <nav class="footer__links">
+            <div class="footer__LHS">
+                <a href="">About</a>
+                <a href="">Store</a>
+            </div>
+            <div class="footer__RHS">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <a href="">Log in</a>
+            </div>
+        </nav>
+    </header>
+    <main class="vflex">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+        <form class="vflex">
+            <label for="q"></label>
+            <input id="q" type="text" placeholder="search for something!" class="searchbox">
+            <div class="hflex">
+                <button>Search</button>
+                <button>I'm feeling lucky</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>United Kingdom</p>
+        <hr>
+        <div class="footer__links">
+            <div class="footer__LHS">
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How search works</a>
+            </div>
+            <div class="footer__RHS">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<style>
+    /** { border: 1px solid green; }*/
+    #logo {
+        margin: 200px auto 50px auto;
+    }
+    p {
+        margin: 5px;
+    }
+    a {
+        margin: 5px
+    }
+    button {
+        padding: 10px;
+        margin: 5px;
+    }
+    nav {
+        height: 20px;
+    }
+    footer {
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: lightgray;
+    }
+    .inputbox {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        text-align: center;
+    /*    I need to make this boi take up all the space except a bit on the left and on the right*/
+    }
+    .icon {
+        height: 50%;
+        margin: 10px;
+        width: 30px;
+    }
+    .vflex {
+        display: flex;
+        flex-direction: column;
+    }
+    .hflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .searchbox {
+        display: flex;
+        width: 400px;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #706E6C;
+    }
+    .footer__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+        padding: 0px;
+    }
+    .footer__LHS {
+        /*better to use flexbox here than to use inline-blocks, more consistent*/
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .footer__RHS {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Iljaz Google</title>
+</head>
+<body>
+    <header>
+        <nav class="footer__links">
+            <!-- I didn't use lists, which seem like the standard structure -->
+            <!-- although some other submissions used <a> -->
+            <ul class="footer__LHS">
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+            </ul>
+            <ul class="footer__RHS">
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href="">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="vflex">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+        <!--I've put input inside form, which wasn't necessary-->
+        <div class="vflex">
+            <div class="searchbox">
+                <svg class="icon" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <div class="inputbox">
+                    <label for="q"></label>
+                    <input id="q" type="text" placeholder="search for something!" class="inputbox">
+                </div>
+                <svg class="icon" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
+                    <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                    <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
+                    <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="hflex">
+            <button>Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+    </main>
+    <footer>
+        <p>United Kingdom</p>
+        <hr>
+        <div class="footer__links">
+            <ul class="footer__LHS">
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How search works</a></li>
+            </ul>
+            <ul class="footer__RHS">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
