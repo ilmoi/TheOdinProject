@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12ef9600-d971-47e9-a018-08d427ce999d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/Project-HTML-CSS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/dictionaries/ilja.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/first_attempt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/google-results-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project-HTML-CSS/second_attempt.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ioY2b5awj9HPpp61tlWfUmUCif" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.first_attempt.html">
+    <configuration name="first_attempt.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project-Rock-Paper-Scissors/first_attempt.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="rps.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/rps.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.first_attempt.html" />
+        <item itemvalue="Node.js.rps.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12ef9600-d971-47e9-a018-08d427ce999d" name="Default Changelist" comment="" />
+      <created>1602575205983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602575205983</updated>
+      <workItem from="1602575207036" duration="3430000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1280" height="521" key="GridCell.Tab.0.bottom" timestamp="1602578643152">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.0.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643152" />
+    <state width="1280" height="521" key="GridCell.Tab.0.center" timestamp="1602578643151">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.0.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643151" />
+    <state width="1280" height="521" key="GridCell.Tab.0.left" timestamp="1602578643150">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.0.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643150" />
+    <state width="1280" height="521" key="GridCell.Tab.0.right" timestamp="1602578643152">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.0.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643152" />
+    <state width="1280" height="521" key="GridCell.Tab.1.bottom" timestamp="1602578643073">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.1.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643073" />
+    <state width="1280" height="521" key="GridCell.Tab.1.center" timestamp="1602578643072">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.1.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643072" />
+    <state width="1280" height="521" key="GridCell.Tab.1.left" timestamp="1602578643071">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.1.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643071" />
+    <state width="1280" height="521" key="GridCell.Tab.1.right" timestamp="1602578643072">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.1.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643072" />
+    <state width="1280" height="521" key="GridCell.Tab.2.bottom" timestamp="1602578643075">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.2.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643075" />
+    <state width="1280" height="521" key="GridCell.Tab.2.center" timestamp="1602578643074">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.2.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643074" />
+    <state width="1280" height="521" key="GridCell.Tab.2.left" timestamp="1602578643074">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.2.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643074" />
+    <state width="1280" height="521" key="GridCell.Tab.2.right" timestamp="1602578643075">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.2.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643075" />
+    <state width="1280" height="521" key="GridCell.Tab.3.bottom" timestamp="1602578643077">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.3.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643077" />
+    <state width="1280" height="521" key="GridCell.Tab.3.center" timestamp="1602578643076">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.3.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643076" />
+    <state width="1280" height="521" key="GridCell.Tab.3.left" timestamp="1602578643076">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.3.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643076" />
+    <state width="1280" height="521" key="GridCell.Tab.3.right" timestamp="1602578643077">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="521" key="GridCell.Tab.3.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578643077" />
+    <state x="149" y="370" key="SettingsEditor" timestamp="1602576280824">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="149" y="370" key="SettingsEditor/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602576280824" />
+    <state width="498" height="445" key="SwitcherDM" timestamp="1602578227674">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="498" height="445" key="SwitcherDM/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602578227674" />
+    <state x="346" y="364" width="588" height="735" key="find.popup" timestamp="1602577035991">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="346" y="364" width="588" height="735" key="find.popup/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1602577035991" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/rps.js</url>
+          <line>77</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
