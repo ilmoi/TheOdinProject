@@ -1,0 +1,89 @@
+<head>
+    <title>A sketchpad!</title>
+    <style>
+        .container {
+            background-color: lightgray;
+            width: 960px;
+            height: 960px;
+            display: grid;
+            /*grid-template-columns: repeat(3, 320px);*/
+            /*grid-template-rows: repeat(3, 320px);*/
+            /*column-gap: 10px;*/
+            /*row-gap: 10px;*/
+        }
+        .filler {
+            /*grid-column-start: 1;*/
+            /*grid-column-end: 2;*/
+            /*grid-row-start: 1;*/
+            /*grid-row-end: 2;*/
+        }
+    </style>
+</head>
+<body>
+    <button>How many divs?</button>
+    <div class="container">
+    </div>
+</body>
+<script>
+    //square functionality
+    let nSquares = 16;
+    const squareSize = 960/16;
+    const container = document.querySelector(".container");
+    resetSquares(nSquares);
+
+    function resetSquares(nSquares) {
+        //clear existing ones
+        container.childNodes.forEach(child => {
+            container.removeChild(child);
+        })
+        //modify container
+        container.style.gridTemplateColumns = `repeat(${nSquares} ${squareSize}px)`
+        container.style.gridTemplateRows = `repeat(${nSquares} ${squareSize}px)`
+        //modify children
+        for (let i=0; i<nSquares; i++) {
+            for (let j=0; j<nSquares; j++) {
+                const newSquare = document.createElement("div");
+                newSquare.classList.add("filler");
+                newSquare.style.backgroundColor = 'blue';
+                newSquare.style.gridColumnStart = `${i+1}`;
+                newSquare.style.gridColumnEnd = `${i+2}`;
+                newSquare.style.gridRowStart = `${j+1}`;
+                newSquare.style.gridRowEnd = `${j+2}`;
+                container.appendChild(newSquare);
+            }
+        }
+    }
+
+    //animation functionality
+    container.addEventListener('mouseover', changeColor);
+
+    function randomRGB() {
+        const r = Math.floor(Math.random()*255);
+        const g = Math.floor(Math.random()*255);
+        const b = Math.floor(Math.random()*255);
+        return `rgb(${r}, ${g}, ${b})`
+    }
+
+    function changeColor(e) {
+        //function listening on parent rather than squares themselves due to the need for EVENT DELEGATION
+        e.target.style.backgroundColor = randomRGB();
+    }
+
+    //button functionality
+    const button = document.querySelector('button');
+    button.addEventListener('click', askNewDivs);
+
+    function isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
+    function askNewDivs() {
+        let newDivs;
+        do {
+            newDivs = window.prompt('how many divs would you like? choose between 16 and 50');
+        } while ( !isNumeric(newDivs) || newDivs < 16 || newDivs > 50);
+        console.log(newDivs);
+        resetSquares(newDivs);
+    }
+
+</script>
