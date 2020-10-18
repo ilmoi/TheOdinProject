@@ -1,0 +1,188 @@
+<head>
+    <title>Dem calculatorz</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background-color: lightgray;
+            border: 30px solid gray;
+            height: 600px;
+            width: 400px;
+            display: grid;
+            grid-template-rows: repeat(6,100px);
+            grid-template-columns: repeat(4, 100px);
+        }
+        .display {
+            background-color: darkslategray;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="display"></div>
+</div>
+<script>
+    // ------------------------------------------------------------- create keys
+    const container = document.querySelector(".container");
+    const numKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+    const actionKeys = ["+", "-", "*", "/"];
+    const extraKeys = [".", "<<"]
+    const specialKeys = ['Enter', 'Clear'];
+    const allKeys = numKeys.concat(actionKeys).concat(extraKeys).concat(specialKeys);
+    //I could build the keyboard using concat methods but honesty CBA. This is fine.
+    const keys = ["1", "2", "3", "+", "4", "5", "6", "-", "7", "8", "9", "*", "0", ".", "<<", "/"];
+    keys.forEach(key => createKey(key));
+    createSpecialKey('lightgreen', 'Enter', 1, 3);
+    createSpecialKey('lightcoral', 'Clear', 3, 5);
+
+    function createKey(key) {
+        const button = document.createElement("button");
+        button.textContent = key;
+        button.classList.add("stillAKey");
+        button.classList.add("normalKey");
+        button.classList.add(key);
+        container.appendChild(button);
+    }
+
+    function createSpecialKey(color, name, start_col, end_col) {
+        const button = document.createElement("button");
+        button.textContent = name;
+        button.classList.add("stillAKey");
+        button.classList.add("specialKey");
+        button.classList.add(name);
+        button.style.backgroundColor = color;
+        button.style.gridColumnStart = start_col;
+        button.style.gridColumnEnd = end_col;
+        container.appendChild(button);
+    }
+
+    // ------------------------------------------------------------- backend
+    function add_(x, y) {return parseFloat(x) + parseFloat(y)}
+    function subtract_(x, y) {return parseFloat(x) - parseFloat(y)}
+    function multiply_(x, y) {return parseFloat(x) * parseFloat(y)}
+    function divide_(x, y) {return parseFloat(x) / parseFloat(y)}
+
+    function round_(num, decimals) {
+        return Math.round(num *10**decimals)/10**decimals
+    }
+
+    function operate(sign, x, y) {
+        switch (sign) {
+        case "+":
+            return round_(add_(x,y), 8);
+        case "-":
+            return round_(subtract_(x,y), 8);
+        case "*":
+            return round_(multiply_(x,y), 8);
+        case "/":
+            return round_(divide_(x,y), 8);
+        default:
+            window.alert("unknown operation!");
+            console.log("unknown operation");
+            return;
+        }
+    }
+
+    // ------------------------------------------------------------- interactions
+    const display = document.querySelector(".display");
+    const allSelectedKeys = document.querySelectorAll(".stillAKey");
+    let prevNum = "";
+    let currentNum = "";
+    let desiredOp = "";
+
+    allSelectedKeys.forEach(key => key.addEventListener("click", handleClick));
+
+    function handleClick(e) {
+        const ourKey = e.target.classList[2] + "";
+        return triage(ourKey);
+    }
+
+    function triage(ourKey) {
+        const numKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+        const actionKeys = ["+", "-", "*", "/"];
+        if (numKeys.includes(ourKey)) {
+            return handleNums(ourKey);
+        } else if (actionKeys.includes(ourKey)) {
+            return handleActions(ourKey);
+        } else if (ourKey === "Enter") {
+            return handleEnter(ourKey);
+        } else if (ourKey === "Clear") {
+            return handleClear(ourKey);
+        } else if (ourKey === "<<") {
+            return handleBack(ourKey);
+        } else if (ourKey === ".") {
+            return handleDot(ourKey);
+        }
+    }
+
+    function handleDot(ourKey) {
+        if (!currentNum.includes(".")) {
+            currentNum += ".";
+            display.textContent = currentNum;
+        }
+    }
+
+    function handleBack(ourKey) {
+        if (currentNum !== "") {
+            currentNum = currentNum.slice(0, -1);
+            display.textContent = currentNum;
+        }
+    }
+
+    function handleEnter(ourKey) {
+        if (desiredOp !== "" && prevNum !== "" && currentNum !== "") {
+            const result = operate(desiredOp, prevNum, currentNum);
+            display.textContent = result;
+            prevNum = "";
+            currentNum = "";
+            desiredOp = "";
+        }
+    }
+
+    function handleClear(ourKey) {
+        prevNum = "";
+        currentNum = "";
+        desiredOp = "";
+        display.textContent = "";
+    }
+
+    function handleActions(ourKey) {
+        prevNum = currentNum;
+        currentNum = "";
+        display.textContent = currentNum;
+        desiredOp = ourKey;
+    }
+
+    function handleNums(ourKey) {
+        currentNum += ourKey;
+        display.textContent = currentNum;
+    }
+
+    // ------------------------------------------------------------- keyboard access
+    window.addEventListener("keydown", handleKey);
+
+    function handleKey(e) {
+        let ourKey = e.key;
+        //have to reassign a few keys to make it recognize the right ones
+        if (ourKey === "=") ourKey = "Enter";
+        if (ourKey === "Backspace") ourKey = "<<";
+        if (ourKey === "C" || ourKey === "c") ourKey = "Clear";
+        //magic!
+        if (allKeys.includes(ourKey)) {
+            triage(ourKey);
+        }
+    }
+
+</script>
+</body>
