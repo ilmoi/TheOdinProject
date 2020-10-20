@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74970516-2412-4a84-846f-58e6e563d33b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j6IgKkHbZWrDhPSSVLSV7hS2tw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.10.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.69" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Javascript/firebase-version" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Javascript/Project Book Library" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Javascript/firebase-version" />
+      <recent name="$PROJECT_DIR$/Javascript" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.TicTacToe.js">
+    <configuration name="BookStructorFirebase.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheOdinProject/Javascript/firebase-version/BookStructorFirebase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="BookStructorFirebase.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheOdinProject/Javascript/BookStructorFirebase.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheOdinProject/Javascript/firebase-version/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="TicTacToe.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Javascript/Project TicTacToe/TicTacToe.js" working-dir="$PROJECT_DIR$/Javascript/Project TicTacToe">
+      <method v="2" />
+    </configuration>
+    <configuration name="playfile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/playfile.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.TicTacToe.js" />
+        <item itemvalue="Node.js.playfile.js" />
+        <item itemvalue="JavaScript Debug.BookStructorFirebase.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.BookStructorFirebase.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74970516-2412-4a84-846f-58e6e563d33b" name="Default Changelist" comment="" />
+      <created>1603118224635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603118224635</updated>
+      <workItem from="1603118225677" duration="28253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="104" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603205553063">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="104" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603205553063" />
+    <state width="1280" height="429" key="GridCell.Tab.0.bottom" timestamp="1603208740761">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.0.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740761" />
+    <state width="1280" height="429" key="GridCell.Tab.0.center" timestamp="1603208740760">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.0.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740760" />
+    <state width="1280" height="429" key="GridCell.Tab.0.left" timestamp="1603208740759">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.0.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740759" />
+    <state width="1280" height="429" key="GridCell.Tab.0.right" timestamp="1603208740760">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.0.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740760" />
+    <state width="1280" height="429" key="GridCell.Tab.1.bottom" timestamp="1603208740677">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.1.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740677" />
+    <state width="1280" height="429" key="GridCell.Tab.1.center" timestamp="1603208740675">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.1.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740675" />
+    <state width="1280" height="429" key="GridCell.Tab.1.left" timestamp="1603208740675">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.1.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740675" />
+    <state width="1280" height="429" key="GridCell.Tab.1.right" timestamp="1603208740676">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.1.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740676" />
+    <state width="1280" height="429" key="GridCell.Tab.2.bottom" timestamp="1603208740678">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.2.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740678" />
+    <state width="1280" height="429" key="GridCell.Tab.2.center" timestamp="1603208740678">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.2.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740678" />
+    <state width="1280" height="429" key="GridCell.Tab.2.left" timestamp="1603208740677">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.2.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740677" />
+    <state width="1280" height="429" key="GridCell.Tab.2.right" timestamp="1603208740678">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.2.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208740678" />
+    <state width="1280" height="429" key="GridCell.Tab.3.bottom" timestamp="1603204164091">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.3.bottom/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603204164091" />
+    <state width="1280" height="429" key="GridCell.Tab.3.center" timestamp="1603204164090">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.3.center/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603204164090" />
+    <state width="1280" height="429" key="GridCell.Tab.3.left" timestamp="1603204164090">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.3.left/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603204164090" />
+    <state width="1280" height="429" key="GridCell.Tab.3.right" timestamp="1603204164091">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1280" height="429" key="GridCell.Tab.3.right/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603204164091" />
+    <state x="205" y="543" key="Registry" timestamp="1603208706913">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="205" y="543" key="Registry/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208706913" />
+    <state x="149" y="370" key="SettingsEditor" timestamp="1603204852364">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="149" y="370" key="SettingsEditor/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603204852364" />
+    <state width="498" height="445" key="SwitcherDM" timestamp="1603176784380">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="498" height="445" key="SwitcherDM/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603176784380" />
+    <state x="303" y="346" width="672" height="678" key="search.everywhere.popup" timestamp="1603208698688">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="303" y="346" width="672" height="678" key="search.everywhere.popup/2245.1440.1440.900/0.23.2560.1417/-2560.0.2560.1440@0.23.2560.1417" timestamp="1603208698688" />
+  </component>
+</project>

@@ -1,0 +1,149 @@
+<table>
+  <tr>
+    <th>Book name</th>
+    <th>Author</th>
+    <th>Pages</th>
+    <th>Read?</th>
+    <th>Delete</th>
+  </tr>
+</table>
+
+<br>
+
+<button class="show">Show me!</button>
+
+<br>
+<br>
+<br>
+<br>
+
+<form>
+  <label for="title"></label>
+  <input type="text" name="title" id="title" placeholder="title">
+  <label for="author"></label>
+  <input type="text" name="author" id="author" placeholder="author">
+  <label for="pages"></label>
+  <input type="text" name="pages" id="pages" placeholder="author">
+  <label for="read"></label>
+  <input type="text" name="read" id="read" placeholder="author">
+  <button class="add">ADD NEW BOOK</button>
+</form>
+
+
+<script>
+  // -------------------------- creating a library
+  function Book(title, author, pages, read) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.read = read
+    this.info = () => title + author + pages + read;
+  }
+
+  function addBookToLibrary(myLibrary, book) {
+    myLibrary.push(book);
+  }
+
+  let myLibrary = [];
+
+  let tbp = new Book('Three Body Problem', 'Cixin Liu', '300 ', true);
+  let foundation = new Book('Foundation Series', 'Azimov', '300 ', true);
+  let snowcrash = new Book('Snow Crash', 'Neal Stephenson', '300 ', true);
+
+  addBookToLibrary(myLibrary, tbp);
+  addBookToLibrary(myLibrary, foundation);
+  addBookToLibrary(myLibrary, snowcrash);
+
+  //run this once to reset the library in localStorage
+  // localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
+
+  console.log(JSON.parse(localStorage.getItem('myLibrary')));
+
+  // -------------------------- showing books
+
+  const table = document.querySelector("table");
+
+  function whatsInStore(myLibrary) {
+    for (let i in myLibrary) {
+      console.log(myLibrary[i]);
+    }
+  }
+
+  function handleRead() {
+    const myLibrary = JSON.parse(localStorage.getItem('myLibrary'));
+    console.log(myLibrary);
+    cleanTable();
+    for (let i in myLibrary) {
+      const tr = document.createElement("tr");
+      const title = document.createElement("td");
+      const author = document.createElement("td");
+      const pages = document.createElement("td");
+      const read = document.createElement("td");
+      const btnHolder = document.createElement("td");
+      const btn = document.createElement("button");
+      title.textContent = myLibrary[i].title;
+      author.textContent = myLibrary[i].author;
+      pages.textContent = myLibrary[i].pages;
+      read.textContent = myLibrary[i].read;
+      btn.textContent = "delete me";
+      btn.classList.add(`deleter-${i}`);
+      btnHolder.appendChild(btn);
+      tr.appendChild(title);
+      tr.appendChild(author);
+      tr.appendChild(pages);
+      tr.appendChild(read);
+      tr.appendChild(btnHolder);
+      table.appendChild(tr);
+    }
+  }
+
+  const showBtn = document.querySelector(".show");
+  showBtn.addEventListener('click', () => {
+    handleRead(myLibrary);
+  });
+
+  // -------------------------- adding books
+
+  function handleSubmit() {
+    //pay attention to how you select elements of a form.
+    //NOT: title = document.querySelection("#title").textContent;
+    const title = form.elements.title.value;
+    const author = form.elements.author.value;
+    const pages = form.elements.pages.value;
+    const read = form.elements.read.value;
+    const newBoi = new Book(title, author, pages, read);
+    myLibrary = JSON.parse(localStorage.getItem('myLibrary'));
+    addBookToLibrary(myLibrary, newBoi);
+    localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
+  }
+
+  const form = document.querySelector("form");
+  form.addEventListener("submit", handleSubmit);
+
+  // -------------------------- deleting books
+
+  function cleanTable() {
+    const rows = Array.from(document.querySelectorAll("tr"));
+    console.log(rows);
+    if (rows.length > 1) {
+      console.log('yay');
+      //pay attention: rows.length-1 and i>=1 (we don't want to delete the title hence not >=0)
+      for (let i = rows.length-1; i >= 1; i--) {
+        rows[i].remove();
+      }
+    }
+  }
+
+  table.addEventListener("click", e => {
+    const cls = e.target.classList[0];
+    if (cls.indexOf("deleter") > -1) {
+      const idx = cls.slice(-1);
+      myLibrary = JSON.parse(localStorage.getItem("myLibrary")); //refresh lib
+      myLibrary.splice(idx, 1); // do action
+      localStorage.setItem('myLibrary', JSON.stringify(myLibrary)); //push refreshed lib
+      handleRead(myLibrary);
+    }
+  })
+
+
+</script>
