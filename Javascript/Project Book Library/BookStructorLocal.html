@@ -54,8 +54,8 @@
   addBookToLibrary(myLibrary, foundation);
   addBookToLibrary(myLibrary, snowcrash);
 
-  //run this once to reset the library in localStorage
-  // localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
+  // run this once to reset the library in localStorage
+  localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
 
   console.log(JSON.parse(localStorage.getItem('myLibrary')));
 

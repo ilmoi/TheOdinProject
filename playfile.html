@@ -1,0 +1,20 @@
+<script>
+
+  //ask the user what location they want the weather for
+
+  //function to fetch the weather
+  getWeather = async (location) => {
+    const weather = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=fd7a3d95ad1ccad3cd5bae68ac1a5a0c`, {
+      mode: 'cors',
+      method: 'GET',
+      // credentials: 'include'
+    })
+    const actualWeather = await weather.json();
+    return actualWeather;
+  }
+  //lets do it
+  getWeather("London")
+      .then(data => console.log(data));
+
+
+</script>

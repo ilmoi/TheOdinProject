@@ -1,0 +1,41 @@
+<html>
+<form>
+  <input type="text" name="loc" placeholder="location">
+  <button>Submit!</button>
+</form>
+</html>
+
+<script>
+
+  const form = document.querySelector("form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const loc = form.elements.loc.value;
+    getWeather(loc).then(weather => console.log(kelvin2Celsius(weather.main.temp)));
+  })
+
+  //ask the user what location they want the weather for
+
+  //function to fetch the weather
+  getWeather = async (location) => {
+    const weather = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=fd7a3d95ad1ccad3cd5bae68ac1a5a0c`, {
+      mode: 'cors',
+      method: 'GET'
+    })
+    const actualWeather = await weather.json();
+    return actualWeather;
+  }
+
+  const kelvin2Celsius = (kelvin) => {
+    return parseInt(kelvin) - 273.15;
+  }
+
+  // getWeather("london").then(weather => console.log(kelvin2Celsius(weather.main.temp)));
+
+  if (true) {
+  }
+
+
+  const a = [1, 2, 3]
+
+</script>

@@ -1,0 +1,41 @@
+<style>
+  .topmenu {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottommenu {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .display {
+    display: none;
+  }
+</style>
+<div class="topmenu">click me</div>
+<div class="bottommenu">show me!</div>
+<div class="bottommenu">show me!</div>
+<div class="bottommenu">show me!</div>
+<div class="bottommenu">show me!</div>
+<div class="bottommenu">show me!</div>
+<script>
+  const topMenu = document.querySelector("div.topmenu");
+
+  function toggleShow() {
+    const bottomMenu = Array.from(document.querySelectorAll("div.bottommenu"));
+    bottomMenu.forEach((elem) => {
+      elem.classList.toggle("display");
+    });
+  }
+
+  topMenu.addEventListener("click", (e) => {
+    toggleShow();
+  });
+</script>

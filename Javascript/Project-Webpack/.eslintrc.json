@@ -1,0 +1,31 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    // Can I remove these now?
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "html"
+  ],
+  "rules": {
+    "no-console": 0,
+    "prettier/prettier": "error",
+    "no-unused-vars": 0,
+    "import/prefer-default-export": 0,
+    "no-shadow": 0
+  }
+}
